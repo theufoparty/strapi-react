@@ -1,0 +1,15 @@
+.header {
+	display: flex;
+	background-color: black;
+	gap: 2em;
+}
+
+.death-logo {
+	height: 125px;
+}
+
+.title {
+	align-self: center;
+	color: white;
+	font-size: 2em;
+}
