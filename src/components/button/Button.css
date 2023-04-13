@@ -3,4 +3,5 @@
 	color: white;
 	border: none;
 	cursor: pointer;
+	font-family: var(--ff-sans-cond);
 }

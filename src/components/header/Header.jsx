@@ -5,9 +5,9 @@ import "./Header.css";
 const Header = (props) => {
 	return (
 		<header className="header">
-			<img className="death-logo" src={deathLogo}></img>
+			<img className="death-logo" src={deathLogo} alt="Death reading a book."></img>
 			<h1 className="title">Death's Book Nook</h1>
-			<AuthenticationSection />
+			<AuthenticationSection setAuthState={props.setAuthState} />
 		</header>
 	);
 };

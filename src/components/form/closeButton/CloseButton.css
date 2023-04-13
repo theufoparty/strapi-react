@@ -1,0 +1,12 @@
+.close-button {
+	background-color: transparent;
+	border: none;
+	padding: none;
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+
+.cross {
+	fill: white;
+}
