@@ -1,17 +1,19 @@
 .header {
 	display: flex;
-	gap: 2em;
-	background-color: var(--clr-black);
+	gap: 1em;
+	background-color: var(--clr-background);
 }
 
 .death-logo {
-	height: 125px;
+	height: 150px;
 }
 
 .title {
 	align-self: center;
-	color: white;
+	color: var(--clr-text);
 	font-size: 2em;
 	font-family: var(--ff-sans-cond);
 	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: var(--letter-spacing-2);
 }

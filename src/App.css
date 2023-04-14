@@ -1,0 +1,14 @@
+.darkmode {
+	--clr-background: var(--clr-black);
+	--clr-text: var(--clr-white);
+}
+
+.lightmode {
+	--clr-background: var(--clr-white);
+	--clr-text: var(--clr-black);
+}
+
+.app {
+	min-height: 100vh;
+	background-color: var(--clr-background);
+}

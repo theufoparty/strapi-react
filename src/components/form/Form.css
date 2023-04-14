@@ -7,9 +7,10 @@
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background-color: black;
-	color: white;
+	background-color: var(--clr-background);
+	color: var(--clr-text);
 	font-family: var(--ff-sans-cond);
+	z-index: 1;
 }
 
 .form {
@@ -21,13 +22,21 @@
 	padding: 0;
 	margin-top: 1em;
 	border: none;
-	color: white;
+	color: var(--clr-text);
 	font-family: var(--ff-sans-cond);
+	letter-spacing: var(--letter-spacing-3);
 }
 
 .error-message {
-	color: white;
+	color: var(--clr-text);
 	position: absolute;
 	bottom: -4em;
 	font-family: var(--ff-sans-cond);
+}
+
+.death-candle {
+	height: 500px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
 }

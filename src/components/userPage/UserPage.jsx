@@ -1,12 +1,12 @@
 import { useState } from "react";
-import "./App.css";
-import BookList from "./components/bookList/BookList";
-import Header from "./components/header/Header";
-import { getAuthData } from "./utils/getAuthData";
-import { useTheme } from "./utils/useTheme";
-import { useUser } from "./utils/useUser";
+import "./UserPage.css";
+import BookList from "../bookList/BookList";
+import Header from "../header/Header";
+import { getAuthData } from "../../utils/getAuthData";
+import { useTheme } from "../../utils/useTheme";
+import { useUser } from "../../utils/useUser";
 
-function App() {
+function UserPage() {
 	const [authState, setAuthState] = useState(getAuthData());
 	const { user, reFetchUser } = useUser(authState);
 	const theme = useTheme();
@@ -19,4 +19,4 @@ function App() {
 	);
 }
 
-export default App;
+export default UserPage;

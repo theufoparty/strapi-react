@@ -1,7 +1,8 @@
 .button {
 	background-color: transparent;
-	color: white;
+	color: var(--clr-text);
 	border: none;
 	cursor: pointer;
 	font-family: var(--ff-sans-cond);
+	padding: 0;
 }

@@ -8,5 +8,5 @@
 }
 
 .cross {
-	fill: white;
+	fill: var(--clr-text);
 }
