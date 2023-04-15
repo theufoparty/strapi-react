@@ -1,4 +1,4 @@
-import moonImage from "../../../../assets/moon.png";
+import moonImage from "../../../assets/moon.png";
 import "./Moon.css";
 
 const Moon = (props) => {

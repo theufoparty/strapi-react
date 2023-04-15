@@ -1,20 +1,40 @@
 import { useState } from "react";
 import "./UserPage.css";
-import BookList from "../bookList/BookList";
 import Header from "../header/Header";
 import { getAuthData } from "../../utils/getAuthData";
 import { useTheme } from "../../utils/useTheme";
 import { useUser } from "../../utils/useUser";
+import FavoriteList from "../favoriteList/FavoriteList";
+import { useBooks } from "../../utils/useBooks";
+import RatingList from "../ratingList/RatingList";
 
 function UserPage() {
 	const [authState, setAuthState] = useState(getAuthData());
 	const { user, reFetchUser } = useUser(authState);
 	const theme = useTheme();
+	const { books, reFetchBooks } = useBooks();
 
 	return (
 		<div className={`${theme} app`}>
 			<Header user={user} theme={theme} setAuthState={setAuthState} />
-			<BookList user={user} reFetchUser={reFetchUser} />
+			<div className="user-content-container">
+				<FavoriteList
+					books={books}
+					reFetchBooks={reFetchBooks}
+					user={user}
+					reFetchUser={reFetchUser}
+					layout="row"
+					theme={theme}
+				/>
+				<RatingList
+					books={books}
+					reFetchBooks={reFetchBooks}
+					user={user}
+					reFetchUser={reFetchUser}
+					layout="row"
+					theme={theme}
+				/>
+			</div>
 		</div>
 	);
 }

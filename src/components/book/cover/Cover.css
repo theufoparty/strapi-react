@@ -1,5 +1,12 @@
 .cover {
-	width: 180px;
 	border-radius: 8px;
 	align-self: center;
+}
+
+.cover-row {
+	width: calc(var(--book-width) * 0.7);
+}
+
+.cover-column {
+	width: var(--book-width);
 }

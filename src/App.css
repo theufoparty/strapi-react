@@ -12,3 +12,7 @@
 	min-height: 100vh;
 	background-color: var(--clr-background);
 }
+
+.content-container {
+	padding: 2em;
+}

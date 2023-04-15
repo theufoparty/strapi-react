@@ -8,8 +8,27 @@
 	align-self: center;
 }
 
+.user-section-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin-left: auto;
+	align-items: flex-end;
+	align-self: center;
+}
+
 .user-name {
 	font-family: var(--ff-sans-cond);
 	font-size: var(--fs-600);
 	color: var(--clr-text);
+}
+
+.user-section-link {
+	background-color: transparent;
+	color: var(--clr-text);
+	border: none;
+	cursor: pointer;
+	font-family: var(--ff-sans-cond);
+	padding: 0;
+	text-decoration: none;
 }

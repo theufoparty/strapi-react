@@ -1,14 +1,7 @@
 import { useState } from "react";
+import { getRatingNumber } from "../../utils/getRatingNumber";
 import Moon from "./moon/Moon";
 import "./Rating.css";
-
-const getRatingNumber = (ratings) => {
-	const ratingList = ratings.map(({ rating }) => rating);
-	if (!ratingList.length) {
-		return 0;
-	}
-	return Math.round(ratingList.reduce((sum, current) => sum + current, 0) / ratingList.length);
-};
 
 const Rating = (props) => {
 	const ratingNumber = getRatingNumber(props.ratings);

@@ -1,0 +1,6 @@
+.select-sorting {
+	font-family: var(--ff-sans-cond);
+	font-size: var(--fs-400);
+	color: var(--clr-text);
+	border: none;
+}

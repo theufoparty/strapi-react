@@ -1,0 +1,12 @@
+.user-book-title {
+	font-family: var(--ff-sans-cond);
+	font-size: var(--fs-700);
+	font-weight: 400;
+	color: var(--clr-text);
+}
+
+.list-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

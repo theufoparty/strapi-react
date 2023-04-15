@@ -1,29 +1,23 @@
 import Cover from "./cover/Cover";
 import "./Book.css";
-import Rating from "./rating/Rating";
+import Rating from "../rating/Rating";
 import FavoriteButton from "./favoriteButton/FavoriteButton";
+import Information from "./information/Information";
 
 const Book = (props) => {
-	const { id, author, title, published, pages, ratings, images } = props.book;
+	const layoutClass = props.layout === "row" ? "book-row" : "book-column";
 
 	return (
-		<div className="book">
-			<Cover images={images} />
-			<p className="book-title">{title}</p>
-			<p className="book-text">By {author}</p>
-			<p className="book-text">Published: {published}</p>
-			<p className="book-text">Pages: {pages}</p>
-
-			<Rating
-				ratings={ratings}
+		<div className={`book ${layoutClass}`}>
+			<Cover images={props.book.images} layout={props.layout} />
+			<Information
+				book={props.book}
 				user={props.user}
 				reFetchBooks={props.reFetchBooks}
-				book={props.book}
 				reFetchUser={props.reFetchUser}
+				layout={props.layout}
+				isFavoriteButtonEnabled={props.isFavoriteButtonEnabled}
 			/>
-			{!!props.user && (
-				<FavoriteButton user={props.user} book={props.book} reFetchUser={props.reFetchUser} />
-			)}
 		</div>
 	);
 };

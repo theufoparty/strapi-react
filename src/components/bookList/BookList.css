@@ -2,5 +2,13 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 2em;
+	gap: 1em;
+}
+
+.book-list-row {
+	flex-direction: column;
+}
+
+.book-list-column {
+	flex-direction: row;
 }

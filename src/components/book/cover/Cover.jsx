@@ -1,18 +1,11 @@
+import { getBookImage } from "../../../utils/getBookImage";
 import "./Cover.css";
 
-const getCoverImage = (images) => {
-	if (images.medium) {
-		return images.medium;
-	}
-	if (images.small) {
-		return images.small;
-	}
-	return images.thumbnail;
-};
-
 const Cover = (props) => {
-	const imageURL = getCoverImage(props.images);
-	return <img className="cover" src={imageURL} />;
+	const coverClass = props.layout === "row" ? "cover-row" : "cover-column";
+
+	const imageURL = getBookImage(props.images);
+	return <img className={`cover ${coverClass}`} src={imageURL} />;
 };
 
 export default Cover;

@@ -1,18 +1,13 @@
-.book-title {
-	color: var(--clr-text);
-	font-family: var(--ff-sans-normal);
-	font-size: var(--fs-400);
-	letter-spacing: var(--letter-spacing-3);
-}
-
 .book {
-	max-width: 180px;
 	display: flex;
-	flex-direction: column;
-	margin: 1.5em;
 }
 
-.book-text {
-	color: var(--clr-text);
-	font-family: var(--ff-sans-normal);
+.book-column {
+	flex-direction: column;
+	gap: 0;
+}
+
+.book-row {
+	flex-direction: row;
+	gap: 1em;
 }
