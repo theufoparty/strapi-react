@@ -1,12 +1,13 @@
 .favorite-button {
 	background-color: transparent;
 	color: var(--clr-text);
-	border: 1px solid var(--clr-text);
-	border-radius: 6px;
-	padding: 0 0.3em 0 0.3em;
+	border: none;
+	padding: 0;
+	border-bottom: 1px solid var(--clr-text);
 	cursor: pointer;
 	font-family: var(--ff-sans-cond);
+	font-size: var(--fs-400);
 	letter-spacing: var(--letter-spacing-3);
-	margin-top: 1em;
+	margin-top: 0.5em;
 	align-self: flex-start;
 }

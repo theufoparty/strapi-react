@@ -6,3 +6,9 @@
 	margin-right: 2em;
 	align-self: center;
 }
+
+@media (max-width: 35em) {
+	.auth-section {
+		margin-right: 0;
+	}
+}

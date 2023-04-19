@@ -1,6 +1,4 @@
 import "./FavoriteList.css";
-import blackKitten from "../../assets/black-kitten.png";
-import whiteKitten from "../../assets/white-kitten.png";
 import UserBookList from "../userBookList/UserBookList";
 
 const FavoriteList = (props) => {
@@ -10,13 +8,10 @@ const FavoriteList = (props) => {
 		user?.favorites.some((favorite) => favorite.id === book.id)
 	);
 
-	const catLogo = props.theme === "darkmode" ? whiteKitten : blackKitten;
-
 	return (
 		<UserBookList
 			title="Your reading List"
-			fallbackImage={catLogo}
-			fallbackImageAltText="Kitten"
+			fallbackText="No books added."
 			layout="row"
 			user={user}
 			reFetchUser={reFetchUser}

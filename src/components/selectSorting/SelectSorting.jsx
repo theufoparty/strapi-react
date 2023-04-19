@@ -14,7 +14,9 @@ const SelectSorting = (props) => {
 			onChange={(e) => props.setSelected(e.target.value)}
 		>
 			{Object.values(SORT_OPTIONS).map((option) => (
-				<option value={option}>{option}</option>
+				<option key={option} value={option}>
+					{option}
+				</option>
 			))}
 		</select>
 	);

@@ -5,15 +5,43 @@
 }
 
 .death-logo {
-	height: 150px;
+	height: 200px;
 }
 
 .title {
 	align-self: center;
 	color: var(--clr-text);
-	font-size: 2em;
+	font-size: var(--fs-900);
 	font-family: var(--ff-sans-cond);
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: var(--letter-spacing-2);
+}
+
+@media (max-width: 35em) {
+	.header {
+		padding: 1em;
+	}
+
+	.death-logo {
+		display: none;
+	}
+
+	.title {
+		font-size: var(--fs-600);
+	}
+}
+
+@media (min-width: 35em) and (max-width: 63em) {
+	.death-logo {
+		display: none;
+	}
+
+	.header {
+		padding: 2em;
+	}
+
+	.title {
+		font-size: var(--fs-700);
+	}
 }

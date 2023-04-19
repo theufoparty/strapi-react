@@ -7,9 +7,14 @@ import { useUser } from "../../utils/useUser";
 import FavoriteList from "../favoriteList/FavoriteList";
 import { useBooks } from "../../utils/useBooks";
 import RatingList from "../ratingList/RatingList";
+import { useNavigate } from "react-router";
 
 function UserPage() {
 	const [authState, setAuthState] = useState(getAuthData());
+	const navigate = useNavigate();
+	if (!authState.jwt) {
+		navigate("/");
+	}
 	const { user, reFetchUser } = useUser(authState);
 	const theme = useTheme();
 	const { books, reFetchBooks } = useBooks();

@@ -61,7 +61,7 @@ const Rating = (props) => {
 					/>
 				))}
 			</div>
-			{!!userRating && <p className="book-text">Your Rating: {userRating.rating} </p>}
+			<p className="book-text">{userRating ? `Your Rating: ${userRating.rating}` : "Unrated"} </p>
 		</>
 	);
 };

@@ -18,9 +18,11 @@
 }
 
 .user-name {
+	display: flex;
 	font-family: var(--ff-sans-cond);
 	font-size: var(--fs-600);
 	color: var(--clr-text);
+	align-self: flex-end;
 }
 
 .user-section-link {
@@ -31,4 +33,35 @@
 	font-family: var(--ff-sans-cond);
 	padding: 0;
 	text-decoration: none;
+	font-size: var(--fs-400);
+}
+
+@media (max-width: 35em) {
+	.user-section {
+		margin-right: 0;
+	}
+
+	.user-section-buttons {
+		gap: 0;
+		font-size: var(--fs-400);
+	}
+
+	.user-name {
+		font-size: var(--fs-400);
+	}
+}
+
+@media (min-width: 35em) and (max-width: 63em) {
+	.user-section {
+		margin-right: 0;
+	}
+
+	.user-section-buttons {
+		gap: 0;
+		font-size: var(--fs-400);
+	}
+
+	.user-name {
+		font-size: var(--fs-500);
+	}
 }

@@ -16,3 +16,9 @@
 .content-container {
 	padding: 2em;
 }
+
+@media (max-width: 35em) {
+	.content-container {
+		padding: 0;
+	}
+}

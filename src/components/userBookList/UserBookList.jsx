@@ -25,7 +25,7 @@ const UserBookList = (props) => {
 					isFavoriteButtonEnabled={props.isFavoriteButtonEnabled}
 				/>
 			) : (
-				<img src={props.fallbackImage} alt={props.fallbackImage} />
+				<p className="fallback">{props.fallbackText} </p>
 			)}
 		</div>
 	);

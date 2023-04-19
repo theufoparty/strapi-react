@@ -91,9 +91,9 @@ h6 {
 
 	--letter-spacing-1: 6px;
 	--letter-spacing-2: 3px;
-	--letter-spacing-3: 2px;
+	--letter-spacing-3: 1px;
 
-	--book-width: 175px;
+	--book-width: 190px;
 }
 
 @media (max-width: 35em) {
@@ -102,16 +102,18 @@ h6 {
 		--fs-700: 2.5rem;
 		--fs-600: 1.5rem;
 		--fs-500: 1.25rem;
-		--fs-400: 1rem;
+		--fs-400: 0.9rem;
 		--fs-300: 0.8rem;
 		--fs-200: 0.5rem;
+
+		--book-width: 150px;
 	}
 }
 
-@media (min-width: 35em) and (max-width: 59.999em) {
+@media (min-width: 35em) and (max-width: 63em) {
 	:root {
 		--fs-800: 5rem;
-		--fs-700: 2.5rem;
+		--fs-700: 2.2rem;
 		--fs-600: 1.5rem;
 		--fs-500: 1.25rem;
 		--fs-400: 1rem;

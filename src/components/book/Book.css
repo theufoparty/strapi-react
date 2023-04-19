@@ -11,3 +11,9 @@
 	flex-direction: row;
 	gap: 1em;
 }
+
+@media (max-width: 35em) {
+	.boow-row {
+		flex-direction: column;
+	}
+}

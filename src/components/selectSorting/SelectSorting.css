@@ -1,6 +1,19 @@
 .select-sorting {
 	font-family: var(--ff-sans-cond);
-	font-size: var(--fs-400);
+	font-size: var(--fs-500);
 	color: var(--clr-text);
 	border: none;
+	background: transparent;
+}
+
+@media (max-width: 35em) {
+	.select-sorting {
+		font-size: var(--fs-600);
+	}
+}
+
+@media (min-width: 35em) and (max-width: 63em) {
+	.select-sorting {
+		font-size: var(--fs-600);
+	}
 }

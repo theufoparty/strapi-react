@@ -10,3 +10,25 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
+.fallback {
+	font-family: var(--ff-sans-cond);
+	font-size: var(--fs-400);
+	color: var(--clr-text);
+}
+
+@media (max-width: 35em) {
+	.user-book-title {
+		font-size: var(--fs-700);
+	}
+
+	.user-book-list {
+		margin-bottom: 1rem;
+	}
+}
+
+@media (min-width: 35em) and (max-width: 63em) {
+	.user-book-title {
+		font-size: var(--fs-700);
+	}
+}
